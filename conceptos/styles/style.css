@@ -1,0 +1,23 @@
+/*
+div {
+    border: 4px solid black;
+    margin-bottom: 4px;
+}
+*/
+
+.demo-content{
+    padding: 15px;
+    background-color: aquamarine;
+}
+/*Para darle color a una columna en especifico*/
+.bg-alt {
+    background-color: #abb1b8;
+}
+.main-content {
+    min-height: 230px;
+}
+
+.sidebar-content {
+    min-height: 100px;
+    margin-bottom: 30px;
+}
