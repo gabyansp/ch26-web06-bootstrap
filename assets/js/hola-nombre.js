@@ -5,3 +5,4 @@ boton.addEventListener('click', () => {
   const nombre = prompt('¿Cuál es tu nombre?');
   saludo.textContent = `Hola ${nombre}`;
 });
+
