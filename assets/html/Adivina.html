@@ -9,10 +9,10 @@
     <!-- Bootstrap icons CDN -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
     <!-- CSS personalizado -->
-    <link rel="stylesheet" href="/assets/styles/main.css">
-    <title>Calculadora</title>
+    <link rel="stylesheet" href="/assets/styles/Adivina.css">
+    <title>Adivina tu número</title>
+    <link rel="icon" href="/assets/img/compu.png">
 </head>
-
 <body>
     <!--navbar-->
     <nav class="navbar navbar-expand-sm bg-dark" data-bs-theme="dark">
@@ -39,8 +39,8 @@
                         </a>
                         <ul class="dropdown-menu">
                             <li><a class="dropdown-item nav-link active" href="/assets/html/hola-nombre.html">Dime tu nombre</a></li>
-                            <li><a class="dropdown-item disabled" href="#">Calculadora</a></li>
-                            <li><a class="dropdown-item nav-link active" href="/assets/html/Adivina.html">Adivina tu número</a></li>
+                            <li><a class="dropdown-item nav-link active" href="/assets/html/Calculator.html">Calculadora</a></li>
+                            <li><a class="dropdown-item disabled" href="#">Adivina tu número</a></li>
                             <li>
                                 <hr class="dropdown-divider">
                             </li>
@@ -55,36 +55,36 @@
         </div>
     </nav>
 
-    <!--Calculadora-->
-    <div class="container text-center">
-      <h1>Calculadora</h1>
-
-      <div class="form-group">
-            <div class="container text-center">
-                <div class="row d-flex align-items-center justify-content-around">
-                    <div class="col-lg-6 col-md-6 col-sm-6">
-                        <label for="num1">Número 1:</label>
-                        <input type="number" class="form-control" id="num1">
+    <main>
+        <section>
+            <div class="container mt-5 text-center">
+                <h1>Adivina el número</h1> <br>
+                <p class="mb-4">Piensa en un número del 1 al 100 y yo trataré de adivinarlo.</p>
+                <p class="mb-4">¿Estás preparado?</p> <br>
+                <div class="row justify-content-center">
+                    <div class="col-md-6">
+                        <button id="start-btn" class="btn btn-primary btn-lg btn-block">Empezar</button>
                     </div>
-      
-                    <div class="col-lg-6 col-md-6 col-sm-6">
-                        <label for="num2">Número 2:</label>
-                        <input type="number" class="form-control" id="num2">
+                </div>
+                <div class="row justify-content-center mt-4 d-none">
+                    <div class="col-md-6">
+                        <p class="text-center">¿Es este tu número?</p>
+                        <h2 id="guess-number" class="text-center"></h2>
+                        <div class="row justify-content-between mt-4">
+                            <div class="col-md-5">
+                                <button id="yes-btn" class="btn btn-success btn-lg btn-block">Sí</button>
+                            </div>
+                            <div class="col-md-5">
+                                <button id="no-btn" class="btn btn-danger btn-lg btn-block">No</button>
+                            </div>
+                        </div>
                     </div>
-    
-                    <div class="col-4 form-group">
-                        <label for="result">Resultado:</label>
-                        <input type="number" class=" form-control text-center " id="result" disabled>
-                    </div>
-                </div> <br>
-                    <button class="btn btn-primary" onclick="sumar()">Sumar</button>
-                    <button class="btn btn-primary" onclick="restar()">Restar</button>
-                    <button class="btn btn-primary" onclick="multiplicar()">Multiplicar</button>
-                    <button class="btn btn-primary" onclick="dividir()">Dividir</button>
+                </div>
             </div>
-        </div>
-    </div>
-
-    <script src="/assets/js/calculator.js"></script>
+        </section>
+    </main>
+    <!-- Script externo -->
+    <script src="/assets/js/Adivina.js"></script>
+    
 </body>
 </html>
