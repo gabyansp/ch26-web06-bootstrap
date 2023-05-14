@@ -1,0 +1,31 @@
+.logo-Monitor {
+    max-height: 30px;
+}
+
+img {
+    border-radius: 50%;
+}
+
+.table tr, td {
+    text-align: center;
+}
+
+
+@media screen and (max-width:600px) {
+    .table thead{
+        display: none;
+    }
+    .table tr{
+        display: block;
+        margin-bottom: 8px;
+        border-bottom: 3.5px solid gray;
+    }
+    .table tr:last-child{
+        border-bottom: 0px;
+    }
+    .table td{
+        display: block;
+        border-bottom: 0px;
+    }  
+}
+
