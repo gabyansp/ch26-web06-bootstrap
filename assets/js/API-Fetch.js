@@ -19,7 +19,7 @@ const mostrarInfo = (users) => {
 
  */
 
-let url = "https://reqres.in/api/users?delay=1";
+let url = "https://reqres.in/api/users?delay=3";
 let body = JSON.parse(localStorage.getItem("body"));
 
 // Checar si los datos almacenados en localStorage están vigentes
