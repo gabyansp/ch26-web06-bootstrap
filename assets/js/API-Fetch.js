@@ -1,23 +1,3 @@
-/* let url = "https://reqres.in/api/users?delay=1";
-let body = JSON.parse( localStorage.getItem("body"));
-fetch(url)
-  .then((response) => response.json())
-  .then((users) => mostrarInfo(users))
-  .catch((error) => console.log(error));
-
-
-
-const mostrarInfo = (users) => {
-    console.log(users.data);
-    let body = "";
-    for (let user of users.data){
-        body += `<tr><td>${user.id}</td><td>${user.first_name}</td><td>${user.last_name}</td><td>${user.email}</td><td><img src="${user.avatar}" ></td>  </tr>`;
-    }
-    localStorage.setItem( "body", JSON.stringify(body));
-    document.getElementById("data").innerHTML = body;
-} 
-
- */
 
 let url = "https://reqres.in/api/users?delay=3";
 let body = JSON.parse(localStorage.getItem("body"));
